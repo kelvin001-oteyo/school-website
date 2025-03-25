@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>School Website</title>
+    <link rel="stylesheet" href="style.css">
+
+    
+</head>
+<body>
+    <header>
+        <button id="theme-toggle">
+            <span class="icon">🌙</span>  
+          </button>
+          
+
+
+
+        <div class="logo">
+            <h1>School Name</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="admission.html">Admission</a></li>
+                <li><a href="academics.html">Academics</a></li>
+                <li><a href="news.html">News & Events</a></li>
+                <li><a href="faculty.html">Faculty</a></li>
+                <li><a href="portal.html">Student Portal</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <h2>Welcome to Our School</h2>
+        <p>Empowering students with knowledge and skills for the future.</p>
+        <a href="admission.html" class="btn">Apply Now</a>
+    </section>
+
+    <section class="features">
+        <div class="feature">
+            <h3>Quality Education</h3>
+            <p>We offer the best learning experience.</p>
+        </div>
+        <div class="feature">
+            <h3>Expert Teachers</h3>
+            <p>Our teachers are highly skilled and experienced.</p>
+        </div>
+        <div class="feature">
+            <h3>Modern Facilities</h3>
+            <p>We have state-of-the-art learning facilities.</p>
+        </div>
+    </section>
+
+    <section class="testimonials">
+        <h2>What Our Students Say</h2>
+
+
+
+
+
+
+        <div class="testimonial">
+            <div class="testimonial-inner">
+                <div class="testimonial-front">
+                    <p>Great school with amazing teachers!</p>
+                </div>
+                <div class="testimonial-back">
+                    <p>- John Doe, Student</p>
+                </div>
+            </div>
+        </div>
+        
+
+
+
+
+
+
+
+
+
+
+
+        <div class="testimonial">
+            <p>"This school has transformed my learning experience!" - Student A</p>
+        </div>
+        <div class="testimonial">
+            <p>"Great teachers and amazing facilities!" - Student B</p>
+        </div>
+    </section>
+
+    <section class="news">
+        <h2>Latest News</h2>
+        <div class="news-item">
+            <h3>Science Fair Winners Announced</h3>
+            <p>Congratulations to the students who won the annual science fair.</p>
+        </div>
+        <div class="news-item">
+            <h3>New Library Opens</h3>
+            <p>Our school library has been upgraded with more books and technology.</p>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 School Name. All Rights Reserved.</p>
+    </footer>
+
+
+
+
+<script>
+ document.addEventListener("DOMContentLoaded", () => {
+  const toggleTheme = document.getElementById("theme-toggle");
+
+  if (!toggleTheme) {
+    console.error("Error: Theme toggle button not found!");
+    return;
+  }
+
+  // Apply saved theme from localStorage
+  if (localStorage.getItem("theme") === "dark") {
+    document.body.classList.add("dark-mode");
+  }
+
+  // Toggle theme on button click
+  toggleTheme.addEventListener("click", () => {
+    document.body.classList.toggle("dark-mode");
+
+    // Save the theme to localStorage
+    localStorage.setItem(
+      "theme",
+      document.body.classList.contains("dark-mode") ? "dark" : "light"
+    );
+  });
+});
+
+
+</script>
+
+
+
+
+
+
+
+
+
+</body>
+</html>

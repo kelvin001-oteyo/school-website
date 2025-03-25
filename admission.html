@@ -1,0 +1,86 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admissions - School Website</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1>School Name</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="admission.html" class="active">Admissions</a></li>
+                <li><a href="academics.html">Academics</a></li>
+                <li><a href="news.html">News & Events</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="admission-hero">
+        <h2>Admissions</h2>
+        <p>Join our school and be part of a bright future.</p>
+    </section>
+
+    <!-- Admission Details -->
+    <section class="admission">
+        <div class="container">
+            <h3>Admission Process</h3>
+            <p>Follow these steps to apply.</p>
+
+            <ul class="admission-steps">
+                <li><span>1.</span> Fill out the online application form.</li>
+                <li><span>2.</span> Submit required documents.</li>
+                <li><span>3.</span> Attend an interview or entrance exam.</li>
+                <li><span>4.</span> Receive admission confirmation.</li>
+            </ul>
+
+            <h3>Apply Now</h3>
+            <form action="submit_admission.php" method="post">
+                <label for="name">Full Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email Address:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="phone">Phone Number:</label>
+                <input type="tel" id="phone" name="phone" required>
+
+                <label for="school">Previous School:</label>
+                <input type="text" id="school" name="school" required>
+
+                <label for="grade">Last Grade Completed:</label>
+                <input type="text" id="grade" name="grade" required>
+
+                <label for="course">Select Course:</label>
+                <select id="course" name="course">
+                    <option value="Science">Science</option>
+                    <option value="Mathematics">Mathematics</option>
+                    <option value="Arts">Arts</option>
+                    <option value="Computer Science">Computer Science</option>
+                </select>
+
+                <label for="why-join">Why do you want to join our school?</label>
+                <textarea id="why-join" name="why-join" rows="3" required></textarea>
+
+                <label for="career-goals">What are your career goals?</label>
+                <textarea id="career-goals" name="career-goals" rows="3" required></textarea>
+
+                <button type="submit">Submit Application</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 School Name. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>
